@@ -16,6 +16,7 @@ import {
   IconRocket,
 } from '@tabler/icons-react';
 import {
+  AboutProps,
   CallToActionProps,
   ContactProps,
   ContentProps,
@@ -29,6 +30,7 @@ import {
   TestimonialsProps,
 } from '../../types';
 import heroImg from '~/assets/images/hero.jpg';
+import gymImg from '~/assets/images/Gym-structure.png'
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
@@ -41,34 +43,41 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+    Jacob Asdot Training: <br /><span className="hidden md:inline"><br />become a better you through </span> <span>Personalized Training</span><span className="sm:whitespace-nowrap">!!</span>
     </>
+
+    // <>
+    //   Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
+    //   <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+    // </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
+        <span>Tired of one-size-fits-all workout plans that leave you stuck and frustrated? Say goodbye to ineffective routines and hello to a fitness journey tailored just for you!</span><br /><br />Ready to transform your body and elevate your fitness? Contact me today to start your personalized workout journey and unlock your full potential!
+        {/* <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
           TailNext
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+        </span>{' '} */}
+        {/* is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>. */}
       </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      {/* It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
+      optimization. */}
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-    targetBlank: true,
+    text: 'About Me',
+    href: '#about-on-home',
+    // href: '/about',
+    icon: IconRocket,
   },
   callToAction2: {
-    text: 'Learn more',
-    href: '/',
+    text: 'Schedule Meeting',
+    href: 'https://calendly.com/asdotjacob',
+    targetBlank: true,
   },
   image: {
-    src: heroImg,
+    src: gymImg,
+    // src: heroImg,
     alt: 'Hero TailNext',
   },
 };
@@ -178,6 +187,49 @@ export const featuresHome: FeaturesProps = {
       },
     },
   ],
+};
+
+// About section data on Home page *******************
+export const AboutHome: AboutProps = {
+  id: 'about-on-home',
+  hasBackground: true,
+  header: {
+    title: 'About Asdot Training',
+    subtitle: 'A little about myself and what I can do to help your fitness journey!',
+    // tagline: 'About',
+  },
+  content:
+    `Hey my name is Jacob Asdot and the owner of AsdotTraining. I’m a Nationally Certified Personal Trainer, and Firefighter/EMT! **Unlock Your Potential with Custom Workout Programs!**`,
+  moreContent: `As a certified personal trainer, I specialize in creating personalized workout programs that help you achieve your fitness goals—whether that’s losing weight, building muscle, or simply feeling more energetic and confident in your daily activities!`,
+  evenMoreContent: `**Why Choose My Workout Programs?**`,
+  items: [
+    {
+      title: '**Tailored for You**',
+      description:
+        'Customized workout plans designed to match your fitness level, goals, and lifestyle.',
+    },
+    {
+      title: '**Expertise**',
+      description:
+        'Professional guidance to ensure you perform exercises safely and effectively.',
+    },
+    {
+      title: '**Flexible and Convenient**',
+      description:
+        'Workouts you can do anywhere—at the gym, at home, or on the go!',
+    },
+    {
+      title: '**Ongoing Support**',
+      description:
+        'Regular check-ins and adjustments to keep you motivated and on track.',
+    },
+  ],
+  image: {
+    src: cameraFrontImg,
+    alt: 'Colorful Image',
+  },
+  isReversed: false,
+  isAfterContent: false,
 };
 
 // Content data on Home page *******************
@@ -605,28 +657,31 @@ export const teamHome: TeamProps = {
 
 // Contact data on Home page *******************
 export const contactHome: ContactProps = {
+  id: 'contact-on-home',
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: 'Any questions or inquiries:',
     tagline: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    'Would love to hear questions about how to get started and/or feedback about your experience with me!',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Located In',
+      description: ['MadeUp County', 'Jacksonville, Florida'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['', 'Mail: jacob@yolked.com'],
+      // description: ['Mobile: +1 (123) 456-7890', 'Mail: jacob@yolked.com'],
       icon: IconPhoneCall,
     },
     {
       title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      description: ['Monday - Friday: 08:00 - 17:00', '' ],
+      // description: ['Monday - Friday: 08:00 - 17:00', 'Book with Calendly: ${https://calendly.com/asdotjacob}' ],
       icon: IconClock,
     },
   ],

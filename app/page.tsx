@@ -6,6 +6,7 @@ import Hero from '~/components/widgets/Hero';
 import SocialProof from '../src/components/widgets/SocialProof';
 import Features from '~/components/widgets/Features';
 import Content from '~/components/widgets/Content';
+import About from '~/components/widgets/About';
 import Steps from '~/components/widgets/Steps';
 import Testimonials from '~/components/widgets/Testimonials';
 import FAQs2 from '~/components/widgets/FAQs2';
@@ -16,6 +17,7 @@ import Contact from '~/components/widgets/Contact';
 import {
   callToAction2Home,
   contactHome,
+  AboutHome,
   contentHomeOne,
   contentHomeTwo,
   faqs2Home,
@@ -32,22 +34,22 @@ export const metadata: Metadata = {
   title: SITE.title,
 };
 
-//startubg today this will be the base for Asot Training
 export default function Page() {
   return (
     <>
       <Hero {...heroHome} />
-      <SocialProof {...socialProofHome} />
-      <Features {...featuresHome} />
-      <Content {...contentHomeOne} />
-      <Content {...contentHomeTwo} />
-      <Steps {...stepsHome} />
-      <Testimonials {...testimonialsHome} />
+      {/* <SocialProof {...socialProofHome} />
+      <Features {...featuresHome} /> */}
+      <About {...AboutHome} />
+      {/* <Content {...contentHomeOne} /> */}
+      {/* <Content {...contentHomeTwo} /> */}
+      {/* <Steps {...stepsHome} /> */}
+      {/* <Testimonials {...testimonialsHome} />
       <FAQs2 {...faqs2Home} />
       <Pricing {...pricingHome} />
-      <Team {...teamHome} />
+      <Team {...teamHome} /> */}
       <Contact {...contactHome} />
-      <CallToAction2 {...callToAction2Home} />
+      {/* <CallToAction2 {...callToAction2Home} /> */}
     </>
   );
 }

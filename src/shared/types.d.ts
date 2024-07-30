@@ -277,6 +277,17 @@ type FeaturesProps = Widget & {
   isAfterContent?: boolean;
 };
 
+type AboutProps = Widget & {
+  header?: Header;
+  content?: string;
+  moreContent?: string;
+  evenMoreContent?: string;
+  items?: Array<Item>;
+  image?: Image;
+  isReversed?: boolean;
+  isAfterContent?: boolean;
+};
+
 type ContentProps = Widget & {
   header?: Header;
   content?: string;
