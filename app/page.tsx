@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   title: SITE.title,
 };
 
+//startubg today this will be the base for Asot Training
 export default function Page() {
   return (
     <>
